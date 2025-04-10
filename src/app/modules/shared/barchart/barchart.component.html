@@ -1,0 +1,37 @@
+<div class="container mat-elevation-z3">
+    <ngx-charts-bar-vertical 
+        [results]="barChartData" 
+        [view]="view" 
+        [xAxis]="xAxis" 
+        [yAxis]="yAxis" 
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [showDataLabel]="showDataLabel"
+        [legend]="legend"
+        [legendPosition]="legendPosition"
+        [legendTitle]="legendTitle"
+        [scheme]="scheme">
+    </ngx-charts-bar-vertical>
+</div>
+
+<!-- Dimensions
+[view]="[700, 400]" - [width, height]----
+
+Color Scheme
+[scheme]="colorScheme"
+
+Options
+[xAxis]="true"
+[yAxis]="true"
+[showXAxisLabel]="true"
+[showYAxisLabel]="true"
+[xAxisLabel]="'Month'"
+[yAxisLabel]="'Revenue ($)'"
+[showDataLabel]="true"
+
+Legend
+[legend]="true"
+[legendPosition]="'right'"
+[legendTitle]="'Legend'" -->

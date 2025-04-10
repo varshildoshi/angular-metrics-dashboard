@@ -1,0 +1,20 @@
+<!-- <div class="container mat-elevation-z3">
+    <ngx-charts-pie-chart [view]="view" [scheme]="scheme" [results]="pieChartData" [legend]="legend"
+        [legendPosition]="legendPosition" [doughnut]="isDoughnut" [labels]="showLabels">
+    </ngx-charts-pie-chart>
+</div> -->
+
+<div class="container mat-elevation-z3">
+    <ngx-charts-pie-chart 
+        [results]="pieChartData" 
+        [view]="view" 
+        [scheme]="scheme" 
+        [legend]="legend"
+        [legendPosition]="legendPosition"
+        [legendTitle]="legendTitle" 
+        [explodeSlices]="explodeSlices"
+        [tooltipDisabled]="tooltipDisabled"
+        [doughnut]="doughnut" 
+        [labels]="labels">
+    </ngx-charts-pie-chart>
+</div>
