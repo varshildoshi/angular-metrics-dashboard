@@ -61,18 +61,13 @@ This project is designed to demonstrate multiple graphs works well using ngx-cha
 npm install
 ```
 
-### Json Server
+### Json Server | Npm start | Concurrently
 
-Go to the `src/assets/mock-metrics.json` file and run the following command to start the JSON server:
-
-```bash
-json-server --watch src/assets/mock-metrics.json
-```
-
-### Run the development server
+I used 'concurrently' to run both the mock server and Angular app with a single command. Just run npm start, and it will execute: 
+`concurrently \"json-server --watch src/assets/mock-metrics.json\" \"ng serve\"`
 
 ```bash
-ng serve
+npm start
 ```
 
 Then open your browser and navigate to:
