@@ -2,9 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+const devBaseURL = '';
+
 export const environment = {
   production: false,
-  devBaseUrl: 'http://localhost:3000/'
+  // baseURL: 'http://localhost:3000/'
+  baseURL: '/assets/mock-metrics.json'
 };
 
 /*

@@ -1,3 +1,5 @@
+const devBaseURL = '';
 export const environment = {
-  production: true
+  production: true,
+  baseURL: devBaseURL
 };
