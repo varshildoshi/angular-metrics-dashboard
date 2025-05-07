@@ -1,17 +1,15 @@
 {
+    "version": 2,
     "builds": [
         {
-            "src": "angular.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "dist/angular-metrics-dashboard"
-            }
+            "src": "package.json",
+            "use": "@vercel/angular"
         }
     ],
-    "rewrites": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/index.html"
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
