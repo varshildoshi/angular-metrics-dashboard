@@ -20,7 +20,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "./",
             "outputPath": "dist/angular-dashboard",
             "index": "src/index.html",
             "main": "src/main.ts",
