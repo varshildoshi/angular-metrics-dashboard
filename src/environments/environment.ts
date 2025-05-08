@@ -7,7 +7,7 @@ const devBaseURL = '';
 export const environment = {
   production: false,
   // baseURL: 'http://localhost:3000/'
-  devBaseURL: 'assets/mock-metrics.json'
+  baseURL: 'assets/mock-metrics.json'
 };
 
 /*

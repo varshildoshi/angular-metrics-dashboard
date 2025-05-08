@@ -10,6 +10,6 @@ export class DataService {
   constructor(private httpClient: HttpClient) { }
 
   getDashboardDetails() {
-    return this.httpClient.get(`${environment.devBaseURL}`);
+    return this.httpClient.get(`${environment.baseURL}`);
   }
 }
