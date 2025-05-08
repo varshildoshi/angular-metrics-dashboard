@@ -234,13 +234,13 @@ export class DashboardComponent implements OnInit {
 
   getDashboardDetails() {
     this.dataService.getDashboardDetails().subscribe((res: any) => {
-      this.barChartData = res.userEngagement.dailyActiveUsers;
+      this.barChartData = res.data.userEngagement.dailyActiveUsers;
       this.barChartColumns = { name: 'date', value: 'users' };
 
-      this.lineChartData = res.salesOverview.monthlyBreakdown;
+      this.lineChartData = res.data.salesOverview.monthlyBreakdown;
       this.lineChartColumns = { name: 'month', value: 'revenue' };
 
-      this.pieChartData = res.geoDistribution;
+      this.pieChartData = res.data.geoDistribution;
       this.pieChartColumns = { name: 'country', value: 'users' };
 
     });
